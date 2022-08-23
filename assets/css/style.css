@@ -10,6 +10,25 @@ label{
   color: gray;
 
 }
+/* width */
+.leftbar ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.leftbar ul::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.leftbar ul::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.leftbar ul::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 /*********reset bootstrap*************/
 .form-style .form-control{
   border: unset;
@@ -47,6 +66,33 @@ label{
     background-color:  #fd7e1440;
 
 }
+.leftbar ul {
+    /*padding-left: 30px;*/
+    margin-top: 30px;
+    height: calc(100vh - 223px);
+    overflow-x: auto;
+}
+
+.leftbar ul li{
+
+
+}
+.leftbar ul li a{
+  display: block;
+  padding: 5px 30px;
+  color: #333;
+  /* border-bottom: 1px solid #ccc; */
+  text-decoration: none;
+  border-right: 10px solid transparent;
+
+}
+.leftbar ul li a:hover{
+  /*background-color: rgba(0,0,0,0.3);*/
+  color: #f00;
+  border-color: #f00;
+}
+
+
 .rightbar {
   width: calc(100% - 240px);
   margin-left: 240px;
@@ -116,7 +162,7 @@ label{
   
   /********hover effect********/
  
-   ul>li a:hover, ul>li a:hover:active {
+/*   ul>li a:hover, ul>li a:hover:active {
     color:rgb(238, 119, 76);
   text-decoration: none;}
   li {
@@ -139,5 +185,5 @@ label{
   }
     a{
       color: rgb(59, 56, 56);
-    }
+    }*/
     
