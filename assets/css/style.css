@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15.25px;
+}
+/*****reset css*****/
+label{
+  color: gray;
+
+}
+/*********reset bootstrap*************/
+.form-style .form-control{
+  border: unset;
+  border-bottom: 1px solid rgb(228, 216, 216);
+  border-radius: 0%;
+  font-size: 14px;
+  color: rgb(53, 50, 50);
+  outline:none;
+  }
+
+  /*****common classes****/
+  .slider.round {
+    border-radius:15px ;
+  }
+  
+  .slider.round:before {
+    border-radius: 15px;
+  }
+  .btn-color{
+   color: white;
+    background-color:  rgb(238, 119, 76);
+  }
+  .btn-width{
+    width: 25%;
+    border-radius: 20px;
+  }
+  
+/*********designing left and rightside bar************/
+.leftbar{
+    width:240px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:  #fd7e1440;
+
+}
+.rightbar {
+  width: calc(100% - 240px);
+  margin-left: 240px;
+  padding: 15px;
+}
+.heading {
+  color:   grey;
+  font-size: 13px;
+
+}
+
+.img-border{
+    border-radius: 20rem;
+    height: 100px;
+}
+/*****toggle switch******/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .9s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:  rgb(238, 119, 76);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(238, 119, 76);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  
+  /********hover effect********/
+ 
+   ul>li a:hover, ul>li a:hover:active {
+    color:rgb(238, 119, 76);
+  text-decoration: none;}
+  li {
+    position: relative;
+    padding-bottom: 1.5rem;
+  }
+  li:after {
+    content: "";
+    position: absolute;
+    left:100%;
+    right:0;
+    top:0;
+    bottom:0;
+    border-right:3px rgb(238, 119, 76);
+   
+  }
+  li:hover:after {
+    width: 2%;
+    background-color: rgb(238, 119, 76);
+  }
+    a{
+      color: rgb(59, 56, 56);
+    }
+    
